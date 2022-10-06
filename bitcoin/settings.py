@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =os.environ.get('DJANGO_SECRET_KEY','django-insecure-zjibsp%wednvoe4c-fo4ne%-vp=h6dvsnra3^-(2rok9c23xvy')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','bitcoin-price.onrender.com']
 
 
 # Application definition
